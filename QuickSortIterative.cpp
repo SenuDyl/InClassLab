@@ -44,14 +44,7 @@ int main(){
     int arr[n];
     for(int i=0;i<n;i++)
         arr[i]=rand()%50;
-    for(int i=0;i<n;i++){
-        cout<<arr[i]<<" ";
-    }
-    cout<<endl;
     int *newArray=quickSort(arr,0,n-1);
-    for(int i=0;i<n;i++){
-        cout<<newArray[i]<<" ";
-    }
     auto stop = high_resolution_clock::now();
     auto duration = duration_cast<microseconds>(stop - start);
     cout << "time taken is "
