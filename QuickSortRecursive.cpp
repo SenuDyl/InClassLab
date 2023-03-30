@@ -35,7 +35,6 @@ int* quickSort(int* array,int start,int end){
     return array;
 }
 
-
 int main(){
     auto start = high_resolution_clock::now();
     int n;
